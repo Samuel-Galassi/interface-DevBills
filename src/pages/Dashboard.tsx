@@ -7,7 +7,6 @@ import { ArrowUp,Calendar,TrendingUp, Wallet } from "lucide-react";
 import { formatCurrency } from "../utils/formatter";
 import {ResponsiveContainer, PieChart, Pie, Cell, Tooltip, BarChart, CartesianGrid, XAxis, YAxis, Legend, Bar, } from "recharts"
 import { renderPieChartLabel } from "../components/Pie";
-import { RechartsDevtools } from '@recharts/devtools';
 const initialSummary: TransactionSummary = {
     balance: 0,
     totalExpenses: 0,
@@ -145,7 +144,6 @@ const Dashboard = () => {
                                 <Legend />
                                 <Bar dataKey="expenses" name= "Despesas" fill="#FF6384" />
                                 <Bar dataKey="income"   name= "Receitas" fill="#37E359" />
-                                <RechartsDevtools />
                              </BarChart>
                             </ResponsiveContainer>
                         ): (
