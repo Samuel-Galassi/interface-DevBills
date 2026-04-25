@@ -12,7 +12,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
   const [authState, setAuthState] = useState<AuthState>({
     user: null,
     error: null,
-    loading: false,
+    loading: true, // ← começa como true
   });
 
   useEffect(() => {

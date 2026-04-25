@@ -5,6 +5,8 @@ import { useAuth } from "../hooks/useAuth";
 const PrivateRoutes = () => {
     const { authState } = useAuth();
 
+    if(authState.loading) return null;
+
     if(!authState.user) return <Navigate to="/login" replace/>
 
     return <Outlet />
