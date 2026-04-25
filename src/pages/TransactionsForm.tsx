@@ -127,7 +127,6 @@ const handleSubmit = async (event: FormEvent):Promise<void> => {
         setLoading(false);
     }
     
-    console.log(event)
 }
     
     return(
